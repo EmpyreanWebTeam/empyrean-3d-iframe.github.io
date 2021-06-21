@@ -87,6 +87,6 @@ body {
   display: block;
   z-index: 100;
   top: 2em; left: 2em;
-  tranform: translateX(-50%);
+  transform: translateX(-50%);
   font-weight: bold;
 }
