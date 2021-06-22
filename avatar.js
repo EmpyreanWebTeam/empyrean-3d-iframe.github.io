@@ -24,7 +24,7 @@ https://tympanus.net/codrops/2019/10/14/how-to-create-an-interactive-3d-characte
       
       const MODEL_PATH = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/stacy_lightweight.glb';
       const canvas = document.querySelector('#c');
-      const backgroundColor = 0xf1f1f1;
+      const backgroundColor = ff0000ff;
       
       // Init the scene
       scene = new THREE.Scene();
