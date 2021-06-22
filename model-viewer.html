@@ -1,8 +1,11 @@
+<head>
 <!-- Import the component -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
 <!-- Use it like any other HTML element -->
-<model-viewer id="mv-demo" shadow-intensity="1" src="./spacesuit.glb"
+<model-viewer id="mv-demo" shadow-intensity="1" src="./model/stacy_lightweight.glb"
 alt="A 3D model of an astronaut" auto-rotate camera-controls
 poster="./spacesuit.jpg"></model-viewer>
 
@@ -15,3 +18,4 @@ auto-rotate poster="assets/poster2.png"></model-viewer>
         document.querySelector('#toggle-poster').setAttribute('poster',
             `assets/${posters[i++ % 2]}`), 2000);
 </script>
+</body>
