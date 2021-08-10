@@ -29,7 +29,7 @@ https://tympanus.net/codrops/2019/10/14/how-to-create-an-interactive-3d-characte
       // Init the scene
       scene = new THREE.Scene();
       scene.background = new THREE.Color(backgroundColor);
-      // scene.fog = new THREE.Fog(backgroundColor, 60, 100);
+      scene.fog = new THREE.Fog(backgroundColor, 60, 100);
       
       // Init the renderer
       renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
@@ -140,26 +140,26 @@ https://tympanus.net/codrops/2019/10/14/how-to-create-an-interactive-3d-characte
       
       
     // Floor
-    let floorGeometry = new THREE.PlaneGeometry(5000, 5000, 1, 1);
-    let floorMaterial = new THREE.MeshPhongMaterial({
-      color: '#00000000',
-      shininess: 0,
-    });
+    // let floorGeometry = new THREE.PlaneGeometry(5000, 5000, 1, 1);
+    // let floorMaterial = new THREE.MeshPhongMaterial({
+    //   color: '#00000000',
+    //   shininess: 0,
+    // });
   
-    let floor = new THREE.Mesh(floorGeometry, floorMaterial);
-    floor.rotation.x = -0.5 * Math.PI;
-    floor.receiveShadow = true;
-    floor.position.y = -11;
-    scene.add(floor);
+    // let floor = new THREE.Mesh(floorGeometry, floorMaterial);
+    // floor.rotation.x = -0.5 * Math.PI;
+    // floor.receiveShadow = true;
+    // floor.position.y = -11;
+    // scene.add(floor);
       
-  let geometry = new THREE.SphereGeometry(8, 32, 32);
-  let material = new THREE.MeshBasicMaterial({ color: '#00000000' }); // 0xf2ce2e 
-  let sphere = new THREE.Mesh(geometry, material);
+  // let geometry = new THREE.SphereGeometry(8, 32, 32);
+  // let material = new THREE.MeshBasicMaterial({ color: '#00000000' }); // 0xf2ce2e 
+  // let sphere = new THREE.Mesh(geometry, material);
       
-  sphere.position.z = -15;
-  sphere.position.y = -2.5;
-  sphere.position.x = -0.25;
-  scene.add(sphere);   
+  // sphere.position.z = -15;
+  // sphere.position.y = -2.5;
+  // sphere.position.x = -0.25;
+  // scene.add(sphere);   
    }
   
    
