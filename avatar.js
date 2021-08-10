@@ -53,7 +53,7 @@ https://tympanus.net/codrops/2019/10/14/how-to-create-an-interactive-3d-characte
   
       const stacy_mtl = new THREE.MeshPhongMaterial({
         map: stacy_txt,
-        color: 0xffffff,
+        color: '#00000000',
         skinning: true
       });
   
@@ -119,13 +119,13 @@ https://tympanus.net/codrops/2019/10/14/how-to-create-an-interactive-3d-characte
       );
       
       // Add lights
-      let hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.61);
+      let hemiLight = new THREE.HemisphereLight('#00000000', '#00000000', 0.61);
       hemiLight.position.set(0, 50, 0);
       // Add hemisphere light to scene
       scene.add(hemiLight);
   
       let d = 8.25;
-      let dirLight = new THREE.DirectionalLight(0xffffff, 0.54);
+      let dirLight = new THREE.DirectionalLight('#00000000', 0.54);
       dirLight.position.set(-8, 12, 8);
       dirLight.castShadow = true;
       dirLight.shadow.mapSize = new THREE.Vector2(1024, 1024);
@@ -142,7 +142,7 @@ https://tympanus.net/codrops/2019/10/14/how-to-create-an-interactive-3d-characte
     // Floor
     let floorGeometry = new THREE.PlaneGeometry(5000, 5000, 1, 1);
     let floorMaterial = new THREE.MeshPhongMaterial({
-      color: 0xeeeeee,
+      color: '#00000000',
       shininess: 0,
     });
   
@@ -153,7 +153,7 @@ https://tympanus.net/codrops/2019/10/14/how-to-create-an-interactive-3d-characte
     scene.add(floor);
       
   let geometry = new THREE.SphereGeometry(8, 32, 32);
-  let material = new THREE.MeshBasicMaterial({ color: 0xf1f1f1 }); // 0xf2ce2e 
+  let material = new THREE.MeshBasicMaterial({ color: '#00000000' }); // 0xf2ce2e 
   let sphere = new THREE.Mesh(geometry, material);
       
   sphere.position.z = -15;
