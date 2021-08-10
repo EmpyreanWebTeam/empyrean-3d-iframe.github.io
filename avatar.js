@@ -24,12 +24,13 @@ https://tympanus.net/codrops/2019/10/14/how-to-create-an-interactive-3d-characte
       
       const MODEL_PATH = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1376484/stacy_lightweight.glb';
       const canvas = document.querySelector('#c');
-      const backgroundColor = 'transparent';
+      const backgroundColor = "rgba(2, 5, 2, 0.5)";
+      
       
       // Init the scene
       scene = new THREE.Scene();
       scene.background = new THREE.Color(backgroundColor);
-      scene.fog = new THREE.Fog(backgroundColor, 60, 100);
+      // scene.fog = new THREE.Fog(backgroundColor, 60, 100);
       
       // Init the renderer
       renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
